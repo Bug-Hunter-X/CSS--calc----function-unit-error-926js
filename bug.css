@@ -1,0 +1,7 @@
+The following CSS code snippet causes unexpected behavior in certain browsers due to the misuse of the `calc()` function.  Specifically, the calculation `calc(100% - 50px)` within the `width` property attempts to subtract pixels from a percentage value without proper unit handling. This can lead to the element not rendering correctly or rendering with an unexpected width.
+
+```css
+div {
+  width: calc(100% - 50px);
+}
+```
