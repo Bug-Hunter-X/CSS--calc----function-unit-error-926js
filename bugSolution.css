@@ -1,0 +1,9 @@
+The corrected CSS code addresses the unit handling issue by ensuring that both the percentage and pixel values have explicit units:
+
+```css
+div {
+  width: calc(100% - 50px);
+}
+```
+
+This modification ensures consistent and accurate calculation across different browsers, resulting in the expected width of the element.
